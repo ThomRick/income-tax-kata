@@ -23,3 +23,15 @@ Your annual income tax amount will be:
      2,500,000   +     30,000,000    +    62,500,000     +    75,000,000     = Rp 170,000,000
 
 **Task** : Write a program in TDD to calculate the annual income tax above.
+
+## Usage :
+
+### With Node.js
+
+Prerequis :
+* Node.js 8.9 or above
+    
+Run :
+* `npm install`
+* `make`
+* `node index.js <income>`

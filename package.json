@@ -1,0 +1,31 @@
+{
+  "name": "income-tax-kata",
+  "version": "1.0.0",
+  "description": "Income tax calculation Kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.ts --require ts-node/register",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomRick/income-tax-kata.git"
+  },
+  "author": "ThomRick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThomRick/income-tax-kata/issues"
+  },
+  "homepage": "https://github.com/ThomRick/income-tax-kata#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.4.0",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
+  }
+}
