@@ -1,0 +1,31 @@
+version: 2
+jobs:
+  prepare:
+    working_directory: ~/app
+    docker:
+        - image: circleci/node:8.9
+    steps:
+      - checkout
+      - run: npm install
+      - save_cache:
+          paths:
+            - .
+          key: bootstrap
+  build:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:8.9
+    steps:
+      - restore_cache:
+          keys:
+            - bootstrap
+      - run: make
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - prepare
+      - build:
+          requires:
+            - prepare
