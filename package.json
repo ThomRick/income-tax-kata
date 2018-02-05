@@ -4,7 +4,7 @@
   "description": "Income tax calculation Kata",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.ts --require ts-node/register",
+    "test": "nyc mocha test/**/*.ts --require ts-node/register",
     "build": "tsc"
   },
   "repository": {
@@ -25,7 +25,29 @@
     "@types/chai": "^4.1.2",
     "@types/mocha": "^2.2.48",
     "@types/node": "^9.4.0",
+    "nyc": "^11.4.1",
     "ts-node": "^4.1.0",
     "typescript": "^2.7.1"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "test"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
   }
 }

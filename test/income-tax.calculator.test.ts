@@ -17,6 +17,9 @@ describe('IncomeTaxCalculator', () => {
     it('income of 75,000,000 should return 6,250,000', () => {
       expect(calculator.calculate(75000000)).to.be.equal(6250000);
     });
+    it('income of 300,000,000 should return 45,000,000', () => {
+      expect(calculator.calculate(300000000)).to.be.equal(45000000);
+    });
     it('income of 750,000,000 should return 170,000,000', () => {
       expect(calculator.calculate(750000000)).to.be.equal(170000000);
     });
