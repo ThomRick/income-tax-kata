@@ -1,4 +1,5 @@
 # income-tax-kata
+[![CircleCI](https://circleci.com/gh/ThomRick/income-tax-kata.svg?style=svg)](https://circleci.com/gh/ThomRick/income-tax-kata)
 
 Income tax calculation Kata
 

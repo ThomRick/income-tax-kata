@@ -5,3 +5,6 @@ build: test-lib
 
 test-lib:
 	npm test -s
+
+clean:
+	rm -rf .nyc_output coverage lib node_modules
