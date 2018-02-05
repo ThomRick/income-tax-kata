@@ -29,7 +29,7 @@ Your annual income tax amount will be:
 ### With Node.js
 
 Requirements :
-* Node.js 8.9 or above
+* Node.js 8.9 or higher
     
 Run :
 * `npm install`
@@ -39,7 +39,7 @@ Run :
 ### With Docker
 
 Requirements:
-* Docker
+* Docker 17.05 or higher
 
 Run :
 * `docker build -t <image_name> .`
